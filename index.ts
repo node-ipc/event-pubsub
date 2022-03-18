@@ -1,20 +1,22 @@
-//shim toallow node and native browser module path support with the same code
+// shim to allow node and native browser module path support with the same code
+// @ts-expect-error TypeScript can't find this
 import Is from '../strong-type/index.js';
 
 const is=new Is;
 
+type Handler = (...args: unknown[]) => unknown;
 class EventPubSub {
     constructor() {
         
     }
 
-    on(type, handler, once=false) {
+    on(type: string, handler: Handler, once=false) {
         is.string(type);
         is.function(handler);
         is.boolean(once);
         
         if(type=='*'){
-            type=this.#all;
+            type=this.#all as unknown as string;
         }
 
         if (!this.#events[type]) {
@@ -28,17 +30,17 @@ class EventPubSub {
         return this;
     }
 
-    once(type, handler) {
+    once(type: string, handler: (...args: unknown[]) => unknown) {
         //sugar for this.on with once set to true 
         //so let that do the validation
         return this.on(type,handler,true);
     }
 
-    off(type='*', handler='*') {
+    off(type='*', handler: string | Handler ='*') {
         is.string(type);
         
         if(type==this.#all.toString()||type=='*'){
-            type=this.#all;
+            type=this.#all as unknown as string;
         }
         
         if (!this.#events[type]) {
@@ -56,9 +58,9 @@ class EventPubSub {
 
         const handlers = this.#events[type];
 
-        while (handlers.includes(handler)) {
+        while (handlers.includes(handler as unknown as Handler)) {
             handlers.splice(
-                handlers.indexOf( handler ),
+                handlers.indexOf( handler as unknown as Handler ),
                 1
             );
         }
@@ -70,10 +72,10 @@ class EventPubSub {
         return this;
     }
 
-    emit(type, ...args) {
+    emit(type: string, ...args: unknown[]) {
         is.string(type);
         
-        const globalHandlers=this.#events[this.#all]||[];
+        const globalHandlers=this.#events[this.#all as unknown as string]||[];
         
         this.#handleOnce(this.#all.toString(), globalHandlers, type, ...args);
         
@@ -101,7 +103,7 @@ class EventPubSub {
         return Object.assign({},this.#events);
     }
 
-    #handleOnce=(type, handlers, ...args)=>{
+    #handleOnce=(type: string, handlers: Handler[], ...args: unknown[])=>{
         is.string(type);
         is.array(handlers);
         
@@ -122,7 +124,7 @@ class EventPubSub {
     #all =Symbol.for('event-pubsub-all')
     #once=Symbol.for('event-pubsub-once')
 
-    #events={}
+    #events: Record<string, Handler[]> = {}
 }
 
 export {EventPubSub as default, EventPubSub};

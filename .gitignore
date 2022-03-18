@@ -6,3 +6,5 @@ node_modules/
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+index.js
+index.d.ts
