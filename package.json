@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RIAEvangelist/event-pubsub.git"
+    "url": "https://github.com/node-ipc/event-pubsub.git"
   },
   "keywords": [
     "event",
