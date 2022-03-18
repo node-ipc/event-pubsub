@@ -14,7 +14,7 @@
     "test": "yarn emulate && node test/CI.js",
     "coverage": "yarn emulate && c8 -r lcov -r html node test/CI-coverage.js && c8 report",
     "start": "yarn emulate && node-http-server port=8000 verbose=true",
-    "emulate": "yarn && copyfiles -V \"./!(node_modules)/*\" \"./**!(node_modules)\"  \"./example/node_modules/event-pubsub/\" && copyfiles -V \"./node_modules/**/*\" \"./example/\" && copyfiles -V \"./!(node_modules)/*\" \"./**!(node_modules)\"  \"./test/node_modules/event-pubsub/\" && copyfiles -V \"./node_modules/**/*\" \"./test/\"",
+    "emulate": "yarn && node ./build.cjs && copyfiles -V \"./!(node_modules)/*\" \"./**!(node_modules)\"  \"./example/node_modules/@node-ipc/event-pubsub/\" && copyfiles -V \"./node_modules/**/*\" \"./example/\" && copyfiles -V \"./!(node_modules)/*\" \"./**!(node_modules)\"  \"./test/node_modules/@node-ipc/event-pubsub/\" && copyfiles -V \"./node_modules/**/*\" \"./test/\"",
     "pretest": "node ./build.cjs",
     "prepublish": "node ./build.cjs",
     "lint": "prettier index.ts",

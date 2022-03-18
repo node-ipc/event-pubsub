@@ -1,6 +1,6 @@
 // shim to allow node and native browser module path support with the same code
 // @ts-expect-error TypeScript can't find this
-import Is from "../strong-type/index.js";
+import Is from "../../strong-type/index.js";
 
 const is = new Is();
 
