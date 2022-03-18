@@ -1,18 +1,16 @@
 # Event PubSub
 
-[![Sponsor RIAEvangelist to help development of event-pubsub](https://img.shields.io/static/v1?label=Sponsor%20Me%20On%20Github&message=%E2%9D%A4&logo=GitHub&link=https://github.com/sponsors/RIAEvangelist)](https://github.com/sponsors/RIAEvangelist)
-
 `npm install event-pubsub`
 
-npm info :  [See npm trends and stats for event-pubsub](http://npm-stat.com/charts.html?package=event-pubsub&author=&from=&to=)   
+npm info :  [See npm trends and stats for event-pubsub](http://npm-stat.com/charts.html?package=@node-ipc/event-pubsub&author=&from=&to=)   
 
-![event-pubsub npm version](https://img.shields.io/npm/v/event-pubsub.svg) ![total npm downloads for event-pubsub](https://img.shields.io/npm/dt/event-pubsub.svg) ![monthly npm downloads for event-pubsub](https://img.shields.io/npm/dm/event-pubsub.svg)
+![event-pubsub npm version](https://img.shields.io/npm/v/@node-ipc/event-pubsub.svg) ![total npm downloads for @node-ipc/event-pubsub](https://img.shields.io/npm/dt/@node-ipc/event-pubsub.svg) ![monthly npm downloads for @node-ipc/event-pubsub](https://img.shields.io/npm/dm/@node-ipc/event-pubsub.svg)
 
 GitHub info :  
-![event-pubsub GitHub Release](https://img.shields.io/github/release/RIAEvangelist/event-pubsub.svg) ![GitHub license event-pubsub license](https://img.shields.io/github/license/RIAEvangelist/event-pubsub.svg) ![open issues for event-pubsub on GitHub](https://img.shields.io/github/issues/RIAEvangelist/event-pubsub.svg)
+![event-pubsub GitHub Release](https://img.shields.io/github/release/node-ipc/event-pubsub.svg) ![GitHub license event-pubsub license](https://img.shields.io/github/license/node-ipc/event-pubsub.svg) ![open issues for event-pubsub on GitHub](https://img.shields.io/github/issues/node-ipc/event-pubsub.svg)
 
 Build Info :  
-Travis CI (linux,windows & Mac) : [![Build Status](https://travis-ci.org/RIAEvangelist/event-pubsub.svg?branch=master)](https://travis-ci.org/RIAEvangelist/event-pubsub)
+Travis CI (linux,windows & Mac) : [![Build Status](https://travis-ci.org/node-ipc/event-pubsub.svg?branch=master)](https://travis-ci.org/node-ipc/event-pubsub)
 
 ### [See the c8 & vanilla-test code coverage](https://cdn-avsja.ondigitalocean.app/event-pubsub/coverage/)
 
@@ -164,7 +162,7 @@ then run any of the following examples
 `node ./example/extending.js`  
 `node ./example/once.js`  
 
-![node event-pubsub basic example](https://raw.githubusercontent.com/RIAEvangelist/event-pubsub/master/example/img/node-event-pubsub-es6.PNG)
+![node event-pubsub basic example](https://raw.githubusercontent.com/node-ipc/event-pubsub/master/example/img/node-event-pubsub-es6.PNG)
 
 
 #### For the browser
@@ -196,18 +194,18 @@ Also, the tests can be run in the browser if you run `npm start` and then go to 
 ### [See the c8 code coverage](https://cdn-avsja.ondigitalocean.app/event-pubsub/coverage/)
 
 ## Node vanilla-test screenshot
-![node event-pubsub vanilla-test report](https://raw.githubusercontent.com/RIAEvangelist/event-pubsub/master/example/img/node-vanilla-test-event-pubsub-es6.PNG)
+![node event-pubsub vanilla-test report](https://raw.githubusercontent.com/node-ipc/event-pubsub/master/example/img/node-vanilla-test-event-pubsub-es6.PNG)
 
 ## Chrome vanilla-test screenshot
-![Chrome event-pubsub vanilla-test report](https://raw.githubusercontent.com/RIAEvangelist/event-pubsub/master/example/img/chrome-vanilla-test-event-pubsub-es6.PNG)
+![Chrome event-pubsub vanilla-test report](https://raw.githubusercontent.com/node-ipc/event-pubsub/master/example/img/chrome-vanilla-test-event-pubsub-es6.PNG)
 
 ## Chrome Example Screenshot
-![Chrome event-pubsub basic example](https://raw.githubusercontent.com/RIAEvangelist/event-pubsub/master/example/img/chrome-event-pubsub-es6.PNG)
+![Chrome event-pubsub basic example](https://raw.githubusercontent.com/node-ipc/event-pubsub/master/example/img/chrome-event-pubsub-es6.PNG)
 
 ## Edge Example Screenshot
-![Edge event-pubsub basic example](https://raw.githubusercontent.com/RIAEvangelist/event-pubsub/master/example/img/edge-event-pubsub-es6.PNG)
+![Edge event-pubsub basic example](https://raw.githubusercontent.com/node-ipc/event-pubsub/master/example/img/edge-event-pubsub-es6.PNG)
 
 ## FireFox Nightly Example Screenshot
 As of 11/22/2020 FF still does not support private fields or methods in js classes, however, the nightly build has it included behind a flag. With the private field and method flags set to true, FireFox nightly works like a charm.
 
-![FireFox-nightly event-pubsub basic example](https://raw.githubusercontent.com/RIAEvangelist/event-pubsub/master/example/img/FireFox-nightly-event-pubsub-es6.PNG)
+![FireFox-nightly event-pubsub basic example](https://raw.githubusercontent.com/node-ipc/event-pubsub/master/example/img/FireFox-nightly-event-pubsub-es6.PNG)
