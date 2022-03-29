@@ -1,6 +1,6 @@
 //using node paths just for coverage
 //otherwise this file is not needed
-import VanillaTest from 'vanilla-test';
+import VanillaTest from '@node-ipc/vanilla-test';
 import EventPubSub  from '../index.js';
 
 const test=new VanillaTest;
