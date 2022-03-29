@@ -5,6 +5,13 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@achrinza/strong-type@npm:1.1.1, @achrinza/strong-type@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@achrinza/strong-type@npm:1.1.1"
+  checksum: 82ee7b2fe2278dab447a07cc48d966505d26d1db69dff5c022ecbea4ac1d40a9c4a477e07c8f2b7692c0a5f5d4d045005f118d9c1539fa9f863408f215730289
+  languageName: node
+  linkType: hard
+
 "@bcoe/v8-coverage@npm:^0.2.3":
   version: 0.2.3
   resolution: "@bcoe/v8-coverage@npm:0.2.3"
@@ -30,17 +37,27 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@node-ipc/event-pubsub@workspace:."
   dependencies:
+    "@achrinza/strong-type": ^1.1.1
+    "@node-ipc/vanilla-test": ^1.4.10
     "@types/node": ^17.0.21
     c8: ^7.11.0
     copyfiles: ^2.4.1
     estrella: ^1.4.1
-    node-http-server: ^8.1.5
+    node-http-server: 8.1.5
     prettier: ^2.6.0
-    strong-type: ^1.1.0
     typescript: ^4.6.2
-    vanilla-test: ^1.4.9
   languageName: unknown
   linkType: soft
+
+"@node-ipc/vanilla-test@npm:^1.4.10":
+  version: 1.4.10
+  resolution: "@node-ipc/vanilla-test@npm:1.4.10"
+  dependencies:
+    "@achrinza/strong-type": 1.1.1
+    ansi-colors-es6: 5.0.0
+  checksum: b713741780a1eccae829e19f8a5265ccf0ccb7b5efb09945111fa3229313341952958f71d83f512db7bc7d33ce6175538aa8ab022727f25fa93d1c3dfa77293b
+  languageName: node
+  linkType: hard
 
 "@npmcli/fs@npm:^1.0.0":
   version: 1.1.1
@@ -120,7 +137,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansi-colors-es6@npm:^5.0.0":
+"ansi-colors-es6@npm:5.0.0":
   version: 5.0.0
   resolution: "ansi-colors-es6@npm:5.0.0"
   checksum: 72fb8aa34b956a58d2154f491ce3dc1bab613117a6d9cd2b83d4cd2a8d4d9f4ede4bd4d0b407be585991f4ad02a1fb315f06954e7fffd66d9be4e35ae4fbcb62
@@ -882,7 +899,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-http-server@npm:^8.1.5":
+"node-http-server@npm:8.1.5":
   version: 8.1.5
   resolution: "node-http-server@npm:8.1.5"
   bin:
@@ -1237,13 +1254,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strong-type@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "strong-type@npm:1.1.0"
-  checksum: 5aa1061e18d813639e359515448989b8006b1ed09d23630212f8a99721dea3f8eb8d896274db7e23123ec8a6b69eadf116a79a6e3cfea0d478ee81f3cbe90bbf
-  languageName: node
-  linkType: hard
-
 "supports-color@npm:^7.1.0":
   version: 7.2.0
   resolution: "supports-color@npm:7.2.0"
@@ -1348,16 +1358,6 @@ __metadata:
     convert-source-map: ^1.6.0
     source-map: ^0.7.3
   checksum: 54ce92bec2727879626f623d02c8d193f0c7e919941fa373ec135189a8382265117f5316ea317a1e12a5f9c13d84d8449052a731fe3306fa4beaafbfa4cab229
-  languageName: node
-  linkType: hard
-
-"vanilla-test@npm:^1.4.9":
-  version: 1.4.9
-  resolution: "vanilla-test@npm:1.4.9"
-  dependencies:
-    ansi-colors-es6: ^5.0.0
-    strong-type: ^1.1.0
-  checksum: 11e7732dbee507760512e43a5d432a86ac9a3d95768d802bc82d3c60f7ca206467557460e3f6be307b905228ccb610aaca69123a53b59c5f239db49978f3a968
   languageName: node
   linkType: hard
 

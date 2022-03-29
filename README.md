@@ -12,7 +12,7 @@ GitHub info :
 Build Info :  
 Travis CI (linux,windows & Mac) : [![Build Status](https://travis-ci.org/node-ipc/event-pubsub.svg?branch=master)](https://travis-ci.org/node-ipc/event-pubsub)
 
-### [See the c8 & vanilla-test code coverage](https://cdn-avsja.ondigitalocean.app/event-pubsub/coverage/)
+### [See the c8 & @node-ipc/vanilla-test code coverage](https://cdn-avsja.ondigitalocean.app/event-pubsub/coverage/)
 
 ***Super light and fast*** Extensible ES6+ event system for Node and the browser the same files that work in node will work in the browser without any modifications. If you must support old browsers you can transpile the module.
 
@@ -186,18 +186,18 @@ This is needed because we use relative paths in our ES6+ modules to allow the sa
 
 ```
 
-## Testing done with vanilla-test
-[vanilla-test](https://github.com/RIAEvangelist/vanilla-test) is a pretty sweet, And minimalist ES6+ testing suite for both the browser and node. You can run the tests with `npm test`
+## Testing done with @node-ipc/vanilla-test
+[@node-ipc/vanilla-test](https://github.com/RIAEvangelist/@node-ipc/vanilla-test) is a pretty sweet, And minimalist ES6+ testing suite for both the browser and node. You can run the tests with `npm test`
 
 Also, the tests can be run in the browser if you run `npm start` and then go to the [local server](http://localhost:8000) : http://localhost:8000 and click the test link. Also, remember, you should be able to access them via http://[your-ip]:8000 provided your firwall and router are not blocking your ip or ports.
 
 ### [See the c8 code coverage](https://cdn-avsja.ondigitalocean.app/event-pubsub/coverage/)
 
-## Node vanilla-test screenshot
-![node event-pubsub vanilla-test report](https://raw.githubusercontent.com/node-ipc/event-pubsub/master/example/img/node-vanilla-test-event-pubsub-es6.PNG)
+## Node @node-ipc/vanilla-test screenshot
+![node event-pubsub @node-ipc/vanilla-test report](https://raw.githubusercontent.com/node-ipc/event-pubsub/master/example/img/node-@node-ipc/vanilla-test-event-pubsub-es6.PNG)
 
-## Chrome vanilla-test screenshot
-![Chrome event-pubsub vanilla-test report](https://raw.githubusercontent.com/node-ipc/event-pubsub/master/example/img/chrome-vanilla-test-event-pubsub-es6.PNG)
+## Chrome @node-ipc/vanilla-test screenshot
+![Chrome event-pubsub @node-ipc/vanilla-test report](https://raw.githubusercontent.com/node-ipc/event-pubsub/master/example/img/chrome-@node-ipc/vanilla-test-event-pubsub-es6.PNG)
 
 ## Chrome Example Screenshot
 ![Chrome event-pubsub basic example](https://raw.githubusercontent.com/node-ipc/event-pubsub/master/example/img/chrome-event-pubsub-es6.PNG)
